@@ -1,8 +1,8 @@
 import re
 
-text = "Вивчення Python може бути веселим."
-pattern = r"в\w*м"  # пошук слова, що починається на "в" та закінчується на "м"
-match = re.search(pattern, text, re.IGNORECASE)
+text = "Моя електронна адреса: ex am ple@std.com.net.ua"
+pattern = r"\w+@\w+\.\+"
+match = re.search(pattern, text)
 
 if match:
-    print("Знайдено:", match.group())
+    print("Електронна адреса:", match.group())
