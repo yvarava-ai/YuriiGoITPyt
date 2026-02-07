@@ -1,8 +1,8 @@
 import re
 
-text = "Моя електронна адреса: ex am ple@std.com.net.ua"
-pattern = r"\w+@\w+\.\+"
-match = re.search(pattern, text)
+text = "Python - потужна, універсальна; мова!."
+pattern = r"[;,-:!.]"
+replacement = ""
+modified_text = re.sub(pattern, replacement, text)
 
-if match:
-    print("Електронна адреса:", match.group())
+print(modified_text)  
